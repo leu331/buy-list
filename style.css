@@ -1,0 +1,202 @@
+@import url(utility.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: #f4f5fb;  
+}
+
+.page {
+    width: 85rem;
+    padding-inline: 23rem;
+}
+
+header {
+    gap: .5rem;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#himage {
+    background-image: url(assets/logo.svg);
+    width: 1.9rem;
+    height: 1.5rem;
+}
+
+section#weekly {
+    & #weeklyimage {
+        background-image: url(assets/arrow-left.svg);
+        width: 1rem;
+        height: 1rem;
+        display: flex;
+    }
+
+    & .btn {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        margin-inline: auto;
+    }
+
+        .adding {
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+
+            & ::placeholder {
+                padding-left: 1rem;
+                font-size: 1rem;
+                position: absolute;
+                top: .8rem;
+            }
+
+            & input#nomeDoItem {
+                width: 28rem;
+                height: 2.75rem;
+                border-radius: .75rem ;
+                border: 1.5px solid #D1D5DB;;
+                
+                &:hover {
+                    border: 1.5px solid #B9C2D0;
+                }
+
+                &:focus-within, :focus-within {
+                    border: 1.5px solid #ca3884;
+                    outline: none;
+                }
+
+                
+            }
+
+            & button#btnAdd {
+                padding-inline: 1.5rem;
+                padding-block: .75rem;
+                border-radius: .75rem;
+                border: none;
+                background-color: #ca3884;
+                color: white;
+                cursor: pointer;
+                font-size: 1rem;
+
+                &:hover {
+                    background-color: #A52C6B;
+                }
+            }
+        }
+        & #checklist {
+            border: 1px solid #d1d6db;
+            padding: .75rem;
+            width:37.5rem;
+            background-color: white;
+            border-radius: .75rem;
+            position: relative;
+            
+            
+            }
+        }
+    
+
+    & h2 {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+
+.linha
+{
+    width: 99%;
+    border: 1.5px solid #D1D5DB;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+   
+    
+    border-radius: .75rem;
+}
+
+.linha:hover {
+    border: 1.5px solid #B9C2D0;
+}
+
+.linha-checked
+{
+    width: 99%;
+    border: 1.5px solid #ca3884;
+    border-radius: .75rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;  
+}
+
+.linha:hover
+{
+   
+}
+
+.label
+{
+    justify-content: start;
+    width: 80%;
+    word-wrap: break-word;
+}
+
+.label label
+{
+    display: block;
+    width: 100%;
+    padding-block: 1rem;
+}
+
+.btnExcluir
+{
+    border: none;
+    background-color: transparent;
+    padding: 20px;
+    outline: none;
+    position: absolute;
+    right: 1.5rem;
+    top: .1rem;
+}
+
+.itens {
+    margin: 0;
+}
+
+input[type="checkbox"]{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    opacity: 1;
+    border: 5px solid red;
+}
+
+input[type="checkbox"]:checked{
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: scale(1.2);
+    opacity: 1;
+    border: 5px solid red;
+}
+
+section#meusItens {
+    position: relative;
+    #delete {
+        width: 1rem;
+        height: 2rem;
+    }
+}

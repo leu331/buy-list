@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap" rel="stylesheet">
+    <title>Quicklist: sua lista de compras personalizada</title>
+</head>
+<body>
+    <div class="page">
+        <header class="flex">
+            <div id="himage"></div>
+            <h1>Quicklist</h1>
+        </header>
+
+        <section id="weekly">
+            <div class="flex btn">
+                <a href="#">
+                    <img src="assets/arrow-left.svg" alt="" id="weeklyimage">
+                </a>
+                <a href="#">Voltar</a>
+            </div>
+
+            <h2>Compras da semana</h2>
+
+                <div class="adding card flex">
+                    <input type="text" id="nomeDoItem" placeholder="Adicione um novo item">
+                    <button id="btnAdd">Adicionar item</button>
+                </div>
+
+                <section class="itens d-flex flex-column center" id="meusItens">
+                    
+                </section>
+      
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js" id="delete"></script>
+    <script src="script.js"></script>
+</body>
+</html>
